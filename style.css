@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b1d2a, #020617);
+  color: white;
+  overflow: hidden;
+}
+
+/* SNOW */
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* INTRO */
+#intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+#intro h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+#intro p {
+  margin-top: 12px;
+  color: #d4af37;
+}
+
+/* MAIN */
+#main {
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+#main h2 {
+  color: #d4af37;
+  letter-spacing: 4px;
+}
+
+#main h1 {
+  font-size: 4rem;
+  margin: 10px 0 40px;
+}
+
+.images {
+  display: flex;
+  gap: 40px;
+}
+
+.images img {
+  width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+/* SANTA BACKGROUND */
+.santa-bg {
+  position: fixed;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1608889175112-8d4e6ef6e3c4");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* SLOGAN BOX */
+.slogan {
+  margin: 25px 0 40px;
+  padding: 12px 28px;
+  background: #b11226;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 10px 30px rgba(177,18,38,0.6);
+}
+#startBtn {
+  margin-top: 25px;
+  padding: 12px 26px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background: #d4af37;
+  color: #020617;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(212,175,55,0.5);
+}
+.images a img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.images a img:hover {
+  transform: scale(1.08) rotate(-1deg);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.7);
+}
